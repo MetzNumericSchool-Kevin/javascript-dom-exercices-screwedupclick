@@ -45,3 +45,14 @@ element = document.content.cloneNode(true);
 document.getElementById("nom_potion").textContent = "La potion s'appelle Berserker.";
 document.getElementById("prix_potion").textContent = "Le prix de la potion est de 35 PO.";
 document.getElementById("description_potion").textContent = "Cette potion va augmenter ta vigeur mais te rendra fou après l'avoir prise. D'où son nom.";
+
+
+// Plus de potion STP frère!
+const form = document.getElementById("form");
+form.onsubmit();
+const formData = new FormData(formHtmlElement);
+
+const nomPotion = formData.get("nomPotion");
+const prixPotion = formData.get("prixPotion");
+console.log("nomPotion", nom);
+console.log("prixPotion", prix);

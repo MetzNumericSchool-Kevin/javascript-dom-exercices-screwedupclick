@@ -5,3 +5,8 @@ document.body.appendChild(p);
 
 element = document.querySelector("#blague_de_roger_le_sorcier");
 element.remove();
+
+const bouton = document.querySelector("#call_archibald");
+bouton.addEventListener("click", function() {
+alert("🧙‍♂️ J'arrive, j'arrive Aventurier !");
+});

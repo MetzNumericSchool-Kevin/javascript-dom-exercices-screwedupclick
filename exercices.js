@@ -49,10 +49,27 @@ document.getElementById("description_potion").textContent = "Cette potion va aug
 
 // Plus de potion STP frère!
 const form = document.getElementById("form");
-form.onsubmit();
+form.submit();
 const formData = new FormData(formHtmlElement);
 
 const nomPotion = formData.get("nomPotion");
 const prixPotion = formData.get("prixPotion");
 console.log("nomPotion", nom);
 console.log("prixPotion", prix);
+
+// function time
+function recupererForm() {
+
+    // ça va récupérer le formulaire avec son iD
+    const formulaire = document.getElementById("form");
+
+    // récupère les valeurs des champs du form
+    const nomPotion = document.getElementById("nomPotion").value;
+    const prixPotion = document.getElementById("prixPotion").value;
+
+    // affiche les valeurs dans la console
+    console.log("nomPotion", nom);
+    console.log("prixPotion", prix);
+};
+
+recupererForm();
